@@ -1,4 +1,4 @@
-# Rental-Car-SQL-Database
+# Rental Car Company (SQL-Database)
 This was a university assignment about basic QSL queries. The concept was to create a SQL schema about a rental car company and then run queries about it.
 
 ## Project Description
@@ -16,13 +16,20 @@ Create the relational schema in MySQL and insert a few records into the tables t
 ### Question 3
 Run the following queries:
 a. Show the reservation number and the location ID of all rentals on 5/20/2015
+
 b. Show the first and the last name and the mobile phone number of these customers that have rented a car in the category that has label = 'luxury'
 c. Show the total amount of rentals per location ID (pick up)
+
 d. Show the total amount of rentals per car's category ID and month
+
 e. For each rental‟s state (pick up) show the top renting category
+
 f. Show how many rentals there were in May 2015 in „NY‟, „NJ‟ and „CA‟ (in three columns)
+
 g. For each month of 2015, count how many rentals had amount greater than this month's average rental amount
+
 h. For each month of 2015, show the percentage change of the total amount of rentals over the total amount of rentals of the same month of 2014
+
 i. For each month of 2015, show in three columns: the total rentals‟ amount of the previous months, the total rentals‟ amount of this month and the total rentals‟ amount of the following months
 
 ### Question 4
