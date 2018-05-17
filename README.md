@@ -15,6 +15,7 @@ Create the relational schema in MySQL and insert a few records into the tables t
 
 ### Question 3
 Run the following queries:
+
 a. Show the reservation number and the location ID of all rentals on 5/20/2015
 
 b. Show the first and the last name and the mobile phone number of these customers that have rented a car in the category that has label = 'luxury'
