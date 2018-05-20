@@ -1,0 +1,17 @@
+/*Run seperate this  view */
+CREATE VIEW V1 AS SELECT MONTH(RENT.PICKUP_DATE) AS M1, SUM(RENT.AMOUNT) AS S1 FROM RENT
+WHERE YEAR(RENT.PICKUP_DATE)=2015
+GROUP BY MONTH(RENT.PICKUP_DATE)
+
+
+/*After the view run this query */
+SELECT v2.Months, v2.Previous_Month, v2.This_Month, SUM(NX.S1) AS Next_Month FROM
+
+(SELECT  V1.M1 AS Months ,SUM(PR.S1) AS Previous_Month, v1.s1 AS This_Month FROM V1
+	LEFT JOIN V1 AS PR ON V1.M1>PR.M1
+	GROUP BY Months
+) AS v2
+
+LEFT JOIN V1 AS NX ON V2.months<NX.M1
+GROUP BY Months
+
